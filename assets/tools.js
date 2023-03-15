@@ -860,7 +860,7 @@ function ImageTool(bridge, config, extra) {
       var mimeType = extensionToMimeType[fileExtension] || 'image/png';
       var dataCanvas = tool.output.element.querySelector('.data');
       dataCanvas.toBlob(function (blob) {
-        cb([blob, 'output-' + tool.siteName + '.' + fileExtension], null);
+        cb([blob, 'output-gif.' + fileExtension], null);
       }, mimeType);
     };
   }
