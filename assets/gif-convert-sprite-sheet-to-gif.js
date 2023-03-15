@@ -379,7 +379,7 @@ window.bridges['animate-bitmap-sprites'] = function () {
       encoder.addFrame(solidCanvasCtx);
     }
     encoder.finish();
-    return cb([encoder.toBlob(), 'output-' + tool.siteName + '.gif'], null);
+    return cb([encoder.toBlob(), 'output-sprite2gif.gif'], null);
   }
   return {
     converter: bridge,
